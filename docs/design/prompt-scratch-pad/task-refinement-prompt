@@ -1,0 +1,17 @@
+# ReBootIT? Tasks Refinement Prompt
+
+Review `docs/design/tasks.md` against `docs/design/plan.md`, `docs/design/specification.md`, and `docs/design/reference/tasks-guide.md`.
+
+Make these refinements:
+
+1. Confirm every task begins with a verb and has a clear result that another person could verify.
+2. Split any task that combines more than one major screen or feature.
+3. Confirm every task traces to an R# or ADR#.
+4. Confirm dependencies match the sequencing in `plan.md`.
+5. Keep every status as “Not started” because development has not begun.
+6. Add separate tests for navigation, CSV loading, collection cards, search, detail information, error handling, responsive layout, and GitHub Pages.
+7. Remove any backend, authentication, automatic ticket creation, API, advanced repair, or full device-catalog work.
+8. Keep the task list focused on adapting the existing template rather than rewriting it.
+9. Keep the wording clear and realistic for a student completing a first Systems Design implementation plan.
+
+Preserve the original task template format and its Definition of Done.
