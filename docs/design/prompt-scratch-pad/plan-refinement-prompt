@@ -1,0 +1,16 @@
+# ReBootIT? Plan Refinement Prompt
+
+Review `docs/design/plan.md` against `docs/design/specification.md` and `docs/design/reference/plan-guide.md`.
+
+Refine the plan with these corrections:
+
+1. Confirm that the fifteen numbered Functional Requirements are referenced as R1 through R15 in the same order.
+2. Remove any database, authentication, automatic ticket creation, API, framework replacement, or advanced repair work.
+3. Make sure every ADR cites at least one requirement ID and includes a real alternative.
+4. Make sure every component maps to at least one requirement.
+5. Make every risk specific to ReBootIT? and give it a practical mitigation and owner.
+6. Put inspection of the starter code and CSV structure before features that depend on them.
+7. Keep the application to a convincing front-end prototype using the existing template, Bootstrap, JavaScript, CSV data, and GitHub Pages.
+8. Keep the writing direct and understandable for a student who is new to Systems Design.
+
+Preserve the plan template's headings and tables. Do not create the task document in this step.
