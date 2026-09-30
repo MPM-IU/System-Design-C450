@@ -1,15 +1,31 @@
-.collection-card-image {
-  height: 180px;
+:root {
+  --reboot-blue: #0d6efd;
+  --reboot-text: #212529;
+  --reboot-surface: #ffffff;
+  --reboot-background: #f8f9fa;
 }
 
-.collection-description {
-  display: -webkit-box;
-  line-clamp: 3;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
+body { color: var(--reboot-text); }
+.skip-link { position: fixed; z-index: 1100; top: 0.5rem; left: 0.5rem; background: white; padding: 0.5rem 0.75rem; border: 2px solid var(--reboot-blue); }
+.hero-panel { background: linear-gradient(135deg, #e8f1ff, #ffffff); border: 1px solid #cfe2ff; border-radius: 1rem; }
+.category-card { color: var(--reboot-text); border: 1px solid #dee2e6; transition: transform 0.15s ease, box-shadow 0.15s ease; }
+.category-card:hover, .category-card:focus-visible { transform: translateY(-2px); box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1); border-color: var(--reboot-blue); }
+.category-icon { color: var(--reboot-blue); font-size: 2rem; }
+.search-panel, .help-panel { background: #e8f1ff; border: 1px solid #cfe2ff; border-radius: 0.75rem; }
+.guide-card { border: 1px solid #dee2e6; }
+.guide-card:hover { border-color: #86b7fe; }
+.collection-card-image { height: 160px; }
+.collection-description { display: -webkit-box; line-clamp: 3; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.detail-heading, .card, .alert, .help-panel { max-width: 850px; }
+.info-box { height: 100%; background: white; border: 1px solid #dee2e6; border-radius: 0.5rem; padding: 1rem; }
+.troubleshooting-steps { padding-left: 1.5rem; }
+.troubleshooting-steps li { padding-left: 0.5rem; margin-bottom: 1rem; }
+.troubleshooting-steps li:last-child { margin-bottom: 0; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid #ffc107; outline-offset: 3px; }
 
-.item-detail-image {
-  max-height: 320px;
+@media (max-width: 575.98px) {
+  .navbar { align-items: flex-start; }
+  .navbar-brand { font-size: 1rem; padding-top: 0.4rem; }
+  .navbar .btn { padding: 0.35rem 0.5rem; }
+  .nav-label { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 }
