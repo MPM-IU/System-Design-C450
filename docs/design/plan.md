@@ -9,7 +9,7 @@ I will adapt the existing starter application instead of rebuilding it. ReBootIT
 ## 1.5 Tech Stack
 
 - Frontend: Existing HTML, CSS, and JavaScript starter application
-- Styling: Bootstrap and the provided `style-guide.html`
+- Styling: Bootstrap and `design-system.md` version 1.0
 - Backend/DB: None for the first version; data comes from `items-template.csv`
 - Hosting: GitHub Pages
 - Other services/APIs: None
@@ -45,12 +45,14 @@ I will adapt the existing starter application instead of rebuilding it. ReBootIT
 ## 4. Dependencies & Assumptions
 
 - External services/tools needed: GitHub repository, GitHub Pages, Bootstrap files already used by the starter, and a browser for testing.
+- `design-system.md` version 1.0 is a dependency for visual, component, voice, and accessibility decisions.
 - Manufacturer documentation is needed to check model details and diagnostic codes before they are presented as facts.
 - The existing starter application is assumed to already support hash routing and basic card rendering.
 - The browser is assumed to be able to load `items-template.csv` when the application is served through GitHub Pages.
 - The first data set is assumed to be small enough for browser-based searching without pagination.
 - Placeholder images may be used if suitable equipment images are not available.
 - The first laptop examples will use a small representative group, such as the Dell Latitude 7420, 7430, 5530, and 5550, instead of attempting every model.
+- Samsung monitors and other manufacturers are possible future additions, but they are outside the first build until model-specific information is verified and new requirements are approved.
 - The “Still need help?” option is assumed to show contact instructions or a link instead of creating a ticket.
 - R1 through R15 are assumed to match the fifteen Functional Requirements in the current specification.
 
@@ -86,4 +88,3 @@ I will adapt the existing starter application instead of rebuilding it. ReBootIT
 | Matthew McCreary | 2026-09-21 | Yes, after manual review against the specification and plan guide |
 
 **Gate:** Do not generate tasks until this plan is done.
-
