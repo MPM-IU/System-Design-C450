@@ -17,8 +17,8 @@
 | T9 | Connect each Home category choice to the troubleshooting collection | R1–R3, ADR-03 | T8 | Done |
 | T10 | Adapt the collection to render one card for each CSV row | R4, R5, ADR-01, ADR-04 | T5 | Done |
 | T11 | Add the required issue name, description, category, estimated time, and optional image to each card | R8, ADR-04 | T10 | Done |
-| T12 | Add category controls that filter the collection to Monitor, Dock, or Laptop items | R3, ADR-03 | T10 | Done |
-| T13 | Add a search field that matches issue names, categories, and models | R6, R7, ADR-03 | T10 | Done |
+| T12 | Add category controls that filter the collection to Monitor, Dock, or Laptop items, and arrange the buttons in a horizontal line across the page to reduce unused space | R3, ADR-03 | T10 | Done |
+| T13 | Add a search field that matches issue names, categories, and models, and move it from the center to the right side of the collection controls | R6, R7, ADR-03 | T10 | Done |
 | T14 | Add a clear message when search or filtering returns no matches | R6, R7, ADR-03 | T12, T13 | Done |
 | T15 | Test category filtering and several issue, category, and model searches | R3, R6, R7 | T12–T14 | Done |
 | T16 | Connect each collection card to the correct detail route | R8, R9, ADR-02, ADR-04 | T10 | Done |
@@ -41,6 +41,11 @@
 
 **Status values:** Not started · In progress · Done · Blocked
 
+## Completed Build Refinements
+
+- During T12, the category buttons were changed from a vertical group on the left side to a horizontal line across the page. This made better use of the available space and removed a large empty area.
+- During T13, the search bar was moved from the center to the right side of the collection controls. This kept the category choices together while giving the search feature its own clear location.
+
 ## Definition of Done (applies to every task)
 
 - Matches its linked requirement's acceptance criteria in the specification.
@@ -50,4 +55,3 @@
 ## Blocked / Questions
 
 No tasks are currently blocked. All implementation, testing, publishing, and public URL verification tasks were completed by September 29, 2026.
-
