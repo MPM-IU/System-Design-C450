@@ -10,7 +10,7 @@ Overall mood: Helpful, simple, and professional.
 
 The application should use the Bootstrap styling already included in the starter project. It should have a light background, blue buttons, dark text, and cards for displaying troubleshooting topics. Headings and buttons should be large enough to read easily.
 
-Use the **style-guide.html** file for additional details about fonts, colors, and layout.
+Use `design-system.md` version 1.0 for the approved fonts, colors, spacing, components, voice, and accessibility rules.
 
 ## User Scenarios
 
@@ -94,16 +94,18 @@ The fields will be used in the following way:
 
 - `id`: A unique number for the troubleshooting guide
 - `name`: The name of the problem
-- `description`: The troubleshooting instructions
+- `description`: A short explanation of the problem
 - `category`: Monitor, Dock, or Laptop
 - `image_url`: An image of the equipment or problem
 - `location`: The model or location of a button, light, cable, or port
 
-If the starter file allows additional fields, the app may also use:
+The ReBootIT? data file will also use:
 
 - estimated_time
 - safety_level
 - model
+- steps, stored in order and separated by a vertical bar (`|`)
+- warning, used for an optional stop or caution message
 
 ## Success Criteria
 
@@ -132,6 +134,7 @@ The template starts with Bootstrap default styling, including a light background
 - This is a beginner project for learning how to describe app behavior before generating code.
 - The application is a prototype and not a finished IT support system.
 - The first version focuses on monitors, docking stations, and laptops.
+- The first sample data focuses mainly on a small number of Dell devices. Other manufacturers, including Samsung monitors, are possible future additions after their information is verified.
 - The app uses one text table data file as its data source.
 - The app does not require a user account or login.
 - The app does not automatically create an IT support ticket.
