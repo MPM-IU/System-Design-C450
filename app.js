@@ -59,6 +59,14 @@ const app = Vue.createApp({
                 category: String(row.category || '').trim(),
                 imageUrl: String(row.image_url || '').trim(),
                 location: String(row.location || '').trim(),
+                estimatedTime: String(row.estimated_time || '').trim(),
+                safetyLevel: String(row.safety_level || '').trim(),
+                model: String(row.model || '').trim(),
+                steps: String(row.steps || '')
+                  .split('|')
+                  .map((step) => step.trim())
+                  .filter(Boolean),
+                warning: String(row.warning || '').trim(),
               }));
               itemsStore.error = '';
             }
@@ -72,7 +80,7 @@ const app = Vue.createApp({
         });
       })
       .catch(() => {
-        itemsStore.error = 'There was a problem loading data.';
+        itemsStore.error = 'We could not load the troubleshooting guides. Please refresh the page or try again later.';
         itemsStore.items = [];
         itemsStore.isLoading = false;
       });
